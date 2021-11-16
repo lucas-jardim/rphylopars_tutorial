@@ -13,6 +13,7 @@ constraint to delete values from one trait. Then, we assigned NA values
 randomly to 10 values of the first simulated trait.
 
 ``` r
+set.seed(2345)
 sim <- Rphylopars::simtraits(ntaxa = 100,
                              ntraits = 2,
                              nreps = 1,

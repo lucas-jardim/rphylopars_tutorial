@@ -21,7 +21,7 @@ library(Rphylopars)
 We start this tutorial by simulating 2 traits by Brownian motion (BM) model without missing values. We did not simulate missing values because *Rphylopars::simtraits* deletes values from all traits. There is not a constraint to delete values from one trait. Then, we assigned NA values randomly to 10 values of the first simulated trait.
 
 ```{r}
-
+set.seed(2345)
 sim <- Rphylopars::simtraits(ntaxa = 100,
                              ntraits = 2,
                              nreps = 1,
